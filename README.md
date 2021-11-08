@@ -9,6 +9,7 @@ What I've done so far:
 - created functions to normalize/standardize data
 
 To do list:
+
 2. Model/Metrics
 - Multivariate Linear Regression
 - What metric to use?
