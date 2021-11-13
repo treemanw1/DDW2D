@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 # return cost given line(theta) + points(df)

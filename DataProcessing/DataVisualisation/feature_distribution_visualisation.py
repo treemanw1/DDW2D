@@ -10,6 +10,6 @@ for feature in features:
     impute_mean(df, feature)
     plt.hist(df[feature], bins=25)
     print(feature)
-    # plt.show()
+    plt.show()
 
 print(df['Population Density'].max())
