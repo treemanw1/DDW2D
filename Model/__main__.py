@@ -9,6 +9,6 @@ no_features = len(features)
 
 df_features, df_target = cf.get_features_targets(df, features, ['Deaths'])
 
-r2, mse = wee.cross_val_score(df_features, df_target, beta=np.zeros((no_features+1, 1)),
-                              alpha=1, num_iters=10000, random_state=100, cv=10)
-print(r2, mse)
+mse = wee.cross_val_score(df_features, df_target, beta=np.zeros((no_features+1, 1)),
+                              alpha=0.1, num_iters=10000, random_state=100, cv=10)
+print(mse)
