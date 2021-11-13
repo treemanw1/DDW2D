@@ -48,8 +48,6 @@ def gradient_descent(X, y, beta, alpha, num_iters):
 
 
 def predict_norm(X, beta):
-    print('X:', X.shape)
-    print('beta:', beta.shape)
     return np.matmul(X, beta)
 
 
