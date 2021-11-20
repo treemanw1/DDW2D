@@ -76,7 +76,7 @@ def split_data(df_feature, df_target, random_state=None, test_size=0.5):
     df_feature_train = df_feature[~df_feature.index.isin(test_indices)]
     df_target_train = df_target[~df_target.index.isin(test_indices)]
 
-    df_feature_test = df_feature.iloc[test_indices, :]
-    df_target_test = df_target.iloc[test_indices, :]
+    df_feature_test = df_feature.loc[test_indices, :]
+    df_target_test = df_target.loc[test_indices, :]
 
     return df_feature_train, df_feature_test, df_target_train, df_target_test

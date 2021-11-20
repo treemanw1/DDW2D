@@ -5,6 +5,10 @@ import numpy as np
 import cohort_functions as cf
 
 
+def rmse(target, pred):
+    return np.sqrt(cf.mean_squared_error(target, pred))
+
+
 # Splits list into n equal parts
 def partition(lst, n):
     division = len(lst) / n
@@ -28,7 +32,7 @@ def cross_val_score(df_feature, df_target, beta, alpha, num_iters, random_state=
     # Iterates through cv parts, each time using each part as test set/rest as train set
     # records r2/mse value and adds to scores
     for fold in folds:
-        print('fold:', fold)
+        # print('fold:', fold)
         # basically train test split here
         df_feature_train = df_feature[~df_feature.index.isin(fold)]
         df_target_train = df_target[~df_target.index.isin(fold)]
