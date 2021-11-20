@@ -1,4 +1,4 @@
-# Imputation for missing values
+# Imputation methods for missing values
 
 
 def impute_mean(df, feature):
