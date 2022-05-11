@@ -11,3 +11,5 @@ Building a Multiple Linear Regression model that predicts the number of deaths i
 Find and define a problem of your interest related to COVID-19. The problem can be modelled either using Linear Regression (or Multiple Linear Regression) or Logistic Regression, which means you can work with either continuous numerical data or classification.
 
 We decided to create a model to find a correlation between positive COVID-19 test rate and the factors that are affect it.
+
+Findings can all be found in the 2D Report file.
