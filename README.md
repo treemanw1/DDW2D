@@ -1,4 +1,4 @@
-# DDW 2D: Linear Regression Model for predicting COVID-related statistics
+# DDW 2D: Writing ML Models for predicting COVID-related statistics
 
 Term 3 10.020 1D project to predict COVID-related statistics from scratch without using any ML libraries.
 
